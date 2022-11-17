@@ -1,0 +1,68 @@
+.footer {
+	background-color: $secondary-bg-color;
+	line-height: 1.7;
+}
+.footer-block {
+	display: flex;
+	padding: 60px 15px;
+	align-items: baseline;
+}
+.footer__logo {
+	display: inline-block;
+	margin-bottom: 20px;
+}
+.footer__web {
+	color: $primary-white-color;
+}
+
+.footer-socials {
+	display: inline-block;
+	align-items: center;
+	margin-left: 70px;
+}
+.footer__text {
+	display: block;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.3333;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	color: $primary-white-color;
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__socials {
+	margin-top: 0;
+}
+.social__link--footer {
+	background-color: $transparent-color-2;
+}
+.social__icon--footer {
+	color: $primary-white-color;
+}
+.footer-form {
+	display: flex;
+	gap: 12px;
+}
+.footer-submit {
+	margin-left: auto;
+}
+.footer-form__label {
+	width: 358px;
+}
+.footer-form__input {
+	width: 100%;
+	padding: 15px 16px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+	background-color: $transparent;
+	outline: none;
+	color: $primary-white-color;
+}
+.footer__button {
+	width: 200px;
+	height: 50px;
+	gap: 10px;
+}

@@ -1,0 +1,77 @@
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1200px;
+.hide{
+    display: none;
+}
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .navigation {
+    width: 100%;
+  }
+  .navigation__logo {
+    padding: 16px 0;
+    margin-left: 0;
+  }
+  .navigation__list,
+  .auth-nav {
+    display: none;
+  }
+
+  .hero__container {
+    max-width: 364px;
+  }
+
+  .hero__title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.6153;
+    width: 100%;
+  }
+  .hero__button {
+    max-width: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navigation {
+    width: 100%;
+  }
+  .navigation__logo {
+    padding: 16px 0;
+    margin-left: 0;
+  }
+  .navigation__list,
+  .auth-nav {
+    display: none;
+  }
+  .hero__container {
+    max-width: 364px;
+  }
+
+  .hero__title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.6153;
+    width: 100%;
+  }
+  .hero__button {
+    max-width: 200px;
+  }
+}

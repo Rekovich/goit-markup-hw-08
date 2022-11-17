@@ -1,0 +1,122 @@
+.form-row {
+	margin-bottom: 10px;
+}
+.form-row__desc {
+	display: flex;
+	width: 100%;
+	position: relative;
+	&:hover {
+		.form-row__input {
+			border: 1px solid $accent-color;
+			border-radius: 4px;
+		}
+		color: $accent-color;
+	}
+	&:focus-within {
+		.form-row__input {
+			border: 1px solid $accent-color;
+			border-radius: 4px;
+		}
+		color: $accent-color;
+	}
+}
+.form-row__icon {
+	position: absolute;
+	left: 12px;
+	top: 50%;
+	transform: translateY(-50%);
+	fill: currentColor;
+}
+.form-row__label {
+	display: block;
+	width: 100%;
+	margin-bottom: 4px;
+	font-size: 12px;
+	line-height: 1.1666;
+	letter-spacing: 0.01em;
+	color: $secondary-text-color;
+}
+.form-row__input {
+	width: 100%;
+	display: block;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+	padding: 11px 12px 11px 42px;
+	outline: none;
+	transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	&::placeholder {
+		font-size: 12px;
+		line-height: 1.1666;
+		letter-spacing: 0.01em;
+		color: $transparent-color-1;
+	}
+}
+.form-row__textarea {
+	margin-bottom: 0;
+}
+.form-row__comment {
+	padding: 12px 16px;
+	height: 120px;
+	width: 100%;
+	resize: none;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+	transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	margin-bottom: 0;
+	&:hover {
+		border-color: $accent-color;
+	}
+	&:focus {
+		border-color: $accent-color;
+	}
+}
+.privacy__check-box {
+	display: flex;
+	gap: 8px;
+	position: relative;
+	align-items: center;
+	font-size: 14px;
+	line-height: 1.7142;
+	letter-spacing: 0.03em;
+	margin: 20px 0 30px 0;
+	color: $secondary-text-color;
+}
+.privacy__input {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	position: absolute;
+	&:checked {
+		&+.privacy__icon {
+			background-image: url(../img/check.svg);
+		}
+	}
+	&:focus {
+		&+.privacy__icon {
+			outline: 2px solid $accent-color;
+			border-radius: 2px;
+		}
+	}
+}
+.privacy__icon {
+	position: absolute;
+	width: 16px;
+	height: 15px;
+	top: 50%;
+	transform: translateY(-50%);
+	left: -20px;
+	background-color: $primary-white-color;
+	background-image: url(../img/check_border.svg);
+	padding-right: 7px;
+}
+.privacy {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	gap: 7px;
+}
+.privacy__doc {
+	text-decoration-line: underline;
+	color: $accent-color;
+}
