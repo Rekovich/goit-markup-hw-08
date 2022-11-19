@@ -1,0 +1,122 @@
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  background-color: $primary-white-color;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  fill: rgba(33, 150, 243, 1);
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  background-color: $primary-white-color;
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: scroll;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: $primary-white-color;
+}
+
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-menu__link {
+  display: block;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  color: $primary-text-color;
+  text-decoration: none;
+}
+
+.mob-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.mob-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  text-decoration: none;
+  margin-top: auto;
+  &__mail {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.1667;
+    letter-spacing: 0.02em;
+    color: $secondary-text-color;
+  }
+}
+.mob-contacts__tel {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.1764;
+  letter-spacing: 0.02em;
+  color: $accent-color;
+}
+.mob-socials__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 64px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  list-style: none;
+  gap: 10px;
+  color: $accent-color;
+ 
+}
+.mob-socials__item:not(:last-child){
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+
+}
+.mob-socials__link{
+    // padding: 0 10px;
+    text-decoration: none;
+}

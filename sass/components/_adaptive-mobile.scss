@@ -1,10 +1,9 @@
-
 .hide {
   display: none;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 480px) {
   .container {
-    width: 1200px;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -12,39 +11,9 @@
     width: 768px;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1200px) {
   .container {
-    width: 480px;
-  }
-}
-
-
-
-
-@media screen and (max-width: 1199px) {
-  .navigation {
-    width: 100%;
-  }
-  .navigation__logo {
-    padding: 16px 0;
-    margin-left: 0;
-  }
-  .navigation__list,
-  .auth-nav {
-    display: none;
-  }
-  // .hero__container {
-  //   max-width: 364px;
-  // }
-
-  .hero__title {
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.6153;
-    width: 100%;
-  }
-  .hero__button {
-    max-width: 200px;
+    width: 1200px;
   }
 }
 
@@ -68,8 +37,8 @@
     display: none;
   }
 
-  .hero__container {
-    max-width: 364px;
+  .hero__container{
+    padding: 118px 60px;
   }
 
   .hero__title {
@@ -80,10 +49,6 @@
   }
   .hero__button {
     max-width: 200px;
-  }
-
-  .feature__list {
-    flex-wrap: wrap;
   }
   .feature__subtitle {
     text-align: center;
@@ -101,12 +66,7 @@
   .team__list {
     flex-wrap: wrap;
   }
-  .team__photo {
-    max-width: 450px;
-    width: 100%;
-    max-height: 460px;
-    height: 100%;
-  }
+
   .footer-block {
     flex-direction: column;
     gap: 60px;
@@ -135,5 +95,28 @@
   .work__button {
     margin-bottom: 0;
   }
+  .work__list {
+    justify-content: center;
+  }
+  .modal{
+    max-width: 450px;
+    width: 100%;
+    max-height: 609px;
+    height: 100%;
+  }
+  .privacy__check-box {
+    font-size: 12px;
+line-height: 1.1667;
+  }
 }
+
+.hero{
+  @media screen and(max-width: 767.98px) {
+    background-image: url(../../img/mobile-img/mobile-hero.jpg);
+  }
+  @media (min-device-pixel-ratio: 2) and (max-width: 767.98px), (min-resolution: 192dpi) and (max-width: 767.98px), (min-resolution: 2dppx) and (max-width: 767.98px) {
+    background-image: url(../../img/mobile-img/mobile-hero@2x.jpg);
+  }
+}
+
 

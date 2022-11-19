@@ -1,0 +1,8 @@
+.hero {
+    @media screen and(min-width: 1200px) {
+        background-image: url(../../img/desktop-img/hero_bg_img_desktop.jpg);
+      }
+      @media (min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
+        background-image: url(../../img/desktop-img/hero_bg_img_desktop@2x.jpg);
+      }
+}

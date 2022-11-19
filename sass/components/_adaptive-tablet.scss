@@ -1,0 +1,127 @@
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .section {
+    padding: 60px 0;
+  }
+  .logo {
+    font-size: 24px;
+    line-height: 1.1667;
+  }
+  .navigation {
+    width: 100%;
+  }
+  .navigation__logo {
+    padding: 16px 0;
+    margin-left: 0;
+  }
+  .auth-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    &__item:not(:last-child) {
+      margin: 0;
+    }
+  }
+
+  .hero {
+    @media screen and(max-width: 1199.98px) {
+      background-image: url(../../img/tablet-img/tablet-hero.jpg);
+    }
+    @media (min-device-pixel-ratio: 2) and (max-width: 1199.98px), (min-resolution: 192dpi) and (max-width: 1199.98px), (min-resolution: 2dppx) and (max-width: 1199.98px) {
+      background-image: url(../../img/tablet-img/tablet-hero@2x.jpg);
+    }
+  }
+  .hero__container {
+    padding: 118px 204px;
+  }
+
+  .hero__title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.6153;
+    width: 100%;
+    max-width: 360px;
+  }
+  .hero__button {
+    max-width: 200px;
+  }
+
+  .feature__list {
+    flex-wrap: wrap;
+  }
+
+  .feature__item {
+    flex-basis: calc((100% - 60px) / 2);
+    max-width: 100%;
+  }
+  .example__section {
+    display: none;
+  }
+  .team__list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .team__item {
+    flex-basis: calc((100% - 60px) / 2);
+    max-width: 100%;
+  }
+
+  .client__item {
+    flex-basis: calc((100% - 90px) / 3);
+    max-width: 100%;
+  }
+  .client__link {
+    display: flex;
+    height: 92px;
+    width: 100%;
+  }
+  .footer__desc {
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc(50% - 30px);
+    align-items: center;
+  }
+  .address__list {
+    align-items: center;
+  }
+  .footer-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+  .footer-socials {
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc(50% - 30px);
+    margin: 0;
+  }
+
+  .footer-submit {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .footer-form {
+    align-items: center;
+    flex-direction: column;
+    &__label {
+      width: 450px;
+    }
+  }
+
+  .work__item {
+    width: calc(50% - 15px);
+  }
+
+  .modal {
+    max-width: 450px;
+    width: 100%;
+    max-height: 609px;
+    height: 100%;
+  }
+  .privacy__check-box {
+    font-size: 12px;
+    line-height: 1.1667;
+  }
+}
