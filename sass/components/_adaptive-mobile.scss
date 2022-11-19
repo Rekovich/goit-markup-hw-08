@@ -37,21 +37,28 @@
     display: none;
   }
 
-  .hero__container{
-    padding: 118px 60px;
+  .hero {
+    padding: 0;
+    &__container{
+      padding: 118px 60px;
+    }
+    &__title {
+      font-weight: 900;
+      font-size: 26px;
+      line-height: 1.6153;
+      width: 100%;
+    }
+    &__button {
+      max-width: 200px;
+    }
   }
 
-  .hero__title {
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.6153;
-    width: 100%;
-  }
-  .hero__button {
-    max-width: 200px;
-  }
+  
   .feature__subtitle {
     text-align: center;
+  }
+  .feature__item {
+    max-width: 100%;
   }
 
   .example__section {
@@ -85,6 +92,7 @@
     align-items: center;
   }
   .footer-form__label {
+    max-width: 450px;
     width: 100%;
   }
 
@@ -112,10 +120,10 @@ line-height: 1.1667;
 
 .hero{
   @media screen and(max-width: 767.98px) {
-    background-image: url(../../img/mobile-img/mobile-hero.jpg);
+    background-image: url(../img/mobile-img/mobile-hero.jpg);
   }
   @media (min-device-pixel-ratio: 2) and (max-width: 767.98px), (min-resolution: 192dpi) and (max-width: 767.98px), (min-resolution: 2dppx) and (max-width: 767.98px) {
-    background-image: url(../../img/mobile-img/mobile-hero@2x.jpg);
+    background-image: url(../img/mobile-img/mobile-hero@2x.jpg);
   }
 }
 
